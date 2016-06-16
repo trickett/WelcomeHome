@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Dev School Challenge</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+       <div id="screen", class="s">
+           <h1 id="title">'Welcome Home'</h1>
+           <div id="picture", style="height:400px;"></div>
+           <div ng-app="buttApplication" ng-controller="buttController">
+               <div id="story">{{story}}<br><br>{{do}}<br><br>{{option1}}<br>{{option2}}</div>
+               <div id="counter">Restarts: {{counter}}</div>
+               <div id="buttonHolder">
+                   <div id="options">
+                       <button id="opt1", class=btn, ng-click="nextScreen('opt1')">Continue</button>
+                       <button id="opt2", class=btn, ng-click="nextScreen('opt2')">Continue</button>
+                   </div>
+                   <button id="back", class=btn, ng-click="nextScreen('back')">Back</button>
+               </div>
+           </div>
+       </div>
+       <div id="author">By Tabitha Ricketts</div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.js"></script>
+       <script src="content/story.js"></script>
+       <script src="content/options.js"></script>
+       <script src="script.js"></script>
+    </body>
+</html>
